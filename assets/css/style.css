@@ -1,0 +1,2073 @@
+/*  ========================
+        START DEFULT CSS
+    ========================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6, a, li, span {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+  color: #656565;
+  font-size: 15px;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-padding {
+  padding: 80px 0 0;
+}
+
+.section-padding-2 {
+  padding: 80px 0 50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #071c1f;
+  border-radius: 30px;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*  ======================
+        END DEFULT CSS
+    ======================
+*/
+/*  ===============================
+        START SECTION TITLE CSS
+    ===============================
+*/
+.section-title {
+  position: relative;
+  text-align: center;
+  max-width: 980px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  color: #071c1f;
+  font-weight: 700;
+  line-height: 60px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  background-color: #ff5a3c;
+  width: 100px;
+  height: 2px;
+  bottom: -5px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.section-title p {
+  margin: 15px 0 0;
+}
+
+/*  ============================
+        END SECTION TITLE CSS
+    ============================
+*/
+/*  ==========================
+        START MAIN BTN CSS
+    ==========================
+*/
+.main-btn {
+  font-size: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#071c1f), to(#ff5a3c));
+  background: linear-gradient(to right, #071c1f 0%, #ff5a3c 100%);
+  color: #ffffff;
+  padding: 10px 40px 12px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.main-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ff5a3c), to(#071c1f));
+  background: linear-gradient(to right, #ff5a3c 0%, #071c1f 100%);
+  color: #ffffff;
+}
+
+/*  =======================
+        END MAIN BTN CSS
+    =======================
+*/
+.top-bar-are {
+  position: relative;
+  padding: 10px;
+}
+
+.top-bar-are .info-area ul li {
+  margin-right: 15px;
+  color: #071c1f;
+}
+
+.top-bar-are .info-area ul li .svg-inline--fa {
+  color: #ff5a3c;
+  margin-right: 5px;
+}
+
+.top-bar-are .social-icon {
+  text-align: right;
+}
+
+.top-bar-are .social-icon ul li button.btn {
+  border: 1px solid #ff5a3c;
+  border-radius: 0;
+  color: #ff5a3c;
+  padding: 0px 5px;
+}
+
+.top-bar-are .social-icon ul li a {
+  font-size: 18px;
+  margin-left: 15px;
+  text-decoration: none;
+  color: #ff5a3c;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.top-bar-are .social-icon ul li a:hover {
+  color: #071c1f;
+}
+
+/*  ==========================
+        START NAVBAR CSS
+    ==========================
+*/
+.bg-light {
+  background-color: #071c1f !important;
+}
+
+.navbar-expand-lg {
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar-expand-lg .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-expand-lg .navbar-nav li.nav-item {
+  padding-left: 15px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #ff5a3c;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active, .navbar-expand-lg .navbar-nav .show > .nav-link {
+  color: #ff5a3c !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active::before, .navbar-expand-lg .navbar-nav .show > .nav-link::before {
+  opacity: 1;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.btn {
+  background-color: #ff5a3c;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 8px 15px;
+  width: 130px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.btn:hover {
+  background-color: #ffffff;
+  color: #071c1f;
+}
+
+.menu-shrink {
+  position: fixed !important;
+  color: #ffffff;
+  background-color: #071c1f !important;
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 999;
+  top: 0;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-animation: fadeInDown .5s both .5s;
+          animation: fadeInDown .5s both .5s;
+}
+
+.menu-shrink .navbar-brand {
+  color: #071c1f;
+}
+
+.menu-shrink .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff !important;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.menu-shrink .nav-link:hover {
+  color: #ff5a3c;
+}
+
+/*  =======================
+        END NAVBAR CSS
+    =======================
+*/
+/*  =============================
+        START BANNER AREA CSS
+    =============================
+*/
+.banner-area {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-area .carrousel {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .carrousel {
+    max-width: 100%;
+  }
+}
+
+.banner-area .carrousel__link {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .carrousel__link {
+    max-width: 100vw;
+    max-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .banner-area .carrousel__link {
+    max-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  .banner-area .carrousel__link {
+    max-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .banner-area .carrousel__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .carrousel__image {
+    max-height: 100vw;
+  }
+}
+
+.banner-area .carrousel__captions {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  max-width: 50%;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .carrousel__captions {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .carrousel__captions.captions-image img {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-area .carrousel__captions.captions-image img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .banner-area .carrousel__captions.captions-image img {
+    width: 100vh;
+  }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  .banner-area .carrousel__captions.captions-image img {
+    width: 100vh;
+  }
+}
+
+.banner-area a {
+  text-decoration: none;
+}
+
+.banner-area .captions-container {
+  padding: 25px;
+  border-radius: .5rem;
+  position: relative;
+  left: 10%;
+  width: 90%;
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .captions-container {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.banner-area .captions-container__title {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .captions-container__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-area .captions-container__title {
+    font-size: 1.25rem;
+  }
+}
+
+.banner-area .captions-container__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .captions-container__subtitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-area .captions-container__subtitle {
+    font-size: 1rem;
+  }
+}
+
+.banner-area .captions-container__text {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: .9em;
+  font-weight: 400;
+  padding: 10px 0;
+  line-height: 1.65em;
+}
+
+@media screen and (max-width: 1025px) {
+  .banner-area .captions-container__text {
+    text-align: center;
+  }
+}
+
+.banner-area .title p {
+  color: #071c1f;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.banner-area .title p .svg-inline--fa {
+  color: #ff5a3c;
+  margin-right: 10px;
+}
+
+.banner-area .title .title-2 {
+  color: #071c1f;
+}
+
+.banner-area .title h4 {
+  font-weight: 700;
+  color: #070212;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.banner-area .heading h1 {
+  color: #071c1f;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+  margin-bottom: 15px;
+}
+
+.banner-area .heading p {
+  color: #070212;
+  font-size: 16px;
+}
+
+.banner-area .heading .link {
+  text-decoration: underline;
+  color: #071c1f;
+  display: inline-block;
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.banner-area .heading .link:hover {
+  color: #ff5a3c;
+}
+
+.banner-area .heading ul {
+  margin-bottom: 15px;
+}
+
+.banner-area .heading ul li {
+  position: relative;
+  display: block;
+  margin-left: 18px;
+  color: #071c1f;
+  line-height: 30px;
+}
+
+.banner-area .heading ul li:before {
+  content: "";
+  position: absolute;
+  background-color: #071c1f;
+  width: 10px;
+  height: 2px;
+  left: -15px;
+  top: 14px;
+}
+
+.banner-area .heading h4 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.banner-area img.carrousel-image-3 {
+  position: relative;
+  margin: auto;
+  top: 15%;
+}
+
+.banner-area .btn-wrapper .default-one {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: #ff5a3c;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 30px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.banner-area .btn-wrapper .default-one:hover {
+  background-color: #071c1f;
+}
+
+.banner-area .btn-wrapper a.ltn__video-play-btn {
+  width: 50px;
+  height: 50px;
+  line-height: 53px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  color: #ff5a3c;
+  background-color: #ffffff;
+  font-size: 22px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.banner-area .btn-wrapper a.ltn__video-play-btn:hover {
+  background-color: #ff5a3c;
+  color: #ffffff;
+}
+
+.banner-area .slick-arrow {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  z-index: 10;
+  bottom: 20px;
+  right: 10%;
+}
+
+.banner-area .slick-prev {
+  left: 20px;
+  background: url(https://image.flaticon.com/icons/png/512/318/318477.png) no-repeat;
+  background-size: contain;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.banner-area .slick-next {
+  right: 20px;
+  background: url(https://image.flaticon.com/icons/png/512/318/318476.png) no-repeat;
+  background-size: contain;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.banner-area ul.slick-dots {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 30px;
+}
+
+.banner-area ul.slick-dots li {
+  display: block;
+  line-height: 1;
+}
+
+.banner-area ul.slick-dots button {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  text-indent: -999px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ff5a3c;
+  opacity: .5;
+  -webkit-transition: opacity .6s ease;
+  transition: opacity .6s ease;
+}
+
+.banner-area ul.slick-dots button:hover {
+  background-color: #ff5a3c;
+  opacity: 1;
+}
+
+.banner-area ul.slick-dots li.slick-active button {
+  background-color: #ff5a3c;
+  opacity: 1;
+}
+
+.banner-area .slick-custom-arrow.slick-custom-arrow-left.slick-arrow {
+  position: absolute;
+  right: 5%;
+  bottom: 20px;
+  background-color: #ffffff;
+  color: #ff5a3c;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 0;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.banner-area .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
+  position: absolute;
+  right: 2%;
+  bottom: 20px;
+  background-color: #ffffff;
+  color: #ff5a3c;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+/*  ===========================
+        END BANNER AREA CSS
+    ===========================
+*/
+/*  ==============================
+        START WELCOME AREA CSS
+    ==============================
+*/
+.services-area .single-services {
+  margin-bottom: 30px;
+  padding: 40px 30px 35px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.services-area .single-services:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.services-area .single-services .text h3 {
+  font-weight: 800;
+  color: #071c1f;
+}
+
+.services-area .single-services .text a {
+  text-decoration: none;
+  color: #ff5a3c;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.services-area .single-services .text a:hover {
+  color: #071c1f;
+}
+
+/*  ============================
+        END WELCOME AREA CSS
+    ============================
+*/
+/*  ============================
+        START JOIN AREA CSS
+    ============================
+*/
+.search-area {
+  position: relative;
+  padding: 80px 0;
+  /* Painting and performance;
+   * Browsers can paint handles in their own layer.
+   */
+  /* Slider size and handle placement;
+   */
+  /* Styling;
+   */
+  /* Handles and cursors;
+   */
+  /* Disabled state;
+   */
+}
+
+.search-area form {
+  position: relative;
+  border: 1px solid #ff5a3c;
+  padding: 50px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0;
+}
+
+.search-area form select.form-select {
+  padding: 15px;
+  margin-bottom: 30px;
+  border: 1px solid #ff5a3c;
+  border-radius: 0;
+}
+
+.search-area form input[type="text"] {
+  border: 1px solid #ff5a3c;
+  border-radius: 0;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.search-area form label.form-label {
+  font-size: 18px;
+  color: #070212;
+  font-weight: 600;
+}
+
+.search-area form a {
+  background-color: #ff5a3c;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 70px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.search-area form a:hover {
+  background-color: #070212;
+}
+
+.search-area form h4 {
+  font-size: 22px;
+  color: #070212;
+  font-weight: 700;
+  float: left;
+}
+
+.search-area .form-select:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.search-area .slider-labels {
+  margin-top: 2px;
+  margin-left: 15px;
+  display: inline-block;
+  color: #071c1f;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.search-area .caption {
+  display: inline-block;
+}
+
+.search-area .rang-title {
+  position: relative;
+  margin: 15px 0 50px;
+}
+
+.search-area .noUi-target, .search-area .noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.search-area .noUi-target {
+  position: relative;
+  direction: ltr;
+}
+
+.search-area .noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* Fix 401 */
+}
+
+.search-area .noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.search-area .noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+
+.search-area .noUi-stacking .noUi-handle {
+  /* This class is applied to the lower origin when
+     its values is > 50%. */
+  z-index: 10;
+}
+
+.search-area .noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s,top .3s;
+  transition: left 0.3s,top .3s;
+}
+
+.search-area .noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+.search-area .noUi-base, .search-area .noUi-handle {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.search-area .noUi-horizontal {
+  height: 4px;
+}
+
+.search-area .noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: -7px;
+  top: -7px;
+  background-color: #ff5a3c;
+}
+
+.search-area .noUi-handle.noUi-handle-upper::after {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: -65px;
+  background-image: url(../image/car.png);
+  z-index: 99;
+  width: 125px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+.search-area .noUi-background {
+  background: #adb5bd;
+}
+
+.search-area .noUi-connect {
+  background: #ff5a3c;
+  -webkit-transition: background 450ms;
+  transition: background 450ms;
+}
+
+.search-area .noUi-origin {
+  border-radius: 2px;
+}
+
+.search-area .noUi-target {
+  border-radius: 2px;
+  margin-top: 25px;
+}
+
+.search-area .noUi-draggable {
+  cursor: w-resize;
+}
+
+.search-area .noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+
+.search-area .noUi-handle {
+  cursor: default;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+.search-area .noUi-handle:active {
+  border: 8px solid #345DBB;
+  border: 8px solid rgba(53, 93, 187, 0.38);
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+
+.search-area [disabled].noUi-connect, .search-area [disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+.search-area [disabled].noUi-origin, .search-area [disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+
+/*  =========================
+        END JOIN AREA CSS
+    =========================
+*/
+/*  ======================================
+        START ROOM APPERMENT AREA CSS
+    ======================================
+*/
+.room-apperment-area {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.room-apperment-area .single-item {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.room-apperment-area .single-item:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.room-apperment-area .single-item .img-area {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.room-apperment-area .single-item .img-area img {
+  width: 100%;
+}
+
+.room-apperment-area .single-item .text .top {
+  border: 1px solid #E4E4E4;
+  padding: 0px 20px 20px;
+  margin-top: -3px;
+}
+
+.room-apperment-area .single-item .text .top a {
+  font-weight: 800;
+  color: #292928;
+  font-family: inherit;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.room-apperment-area .single-item .text .top a:hover {
+  color: #ff5a3c;
+}
+
+.room-apperment-area .single-item .text .top h5 {
+  font-size: 16px;
+  color: #9d9d9d;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.room-apperment-area .single-item .text .top h5 .svg-inline--fa {
+  margin-right: 5px;
+}
+
+.room-apperment-area .single-item .text .bottom {
+  padding: 20px 20px 20px;
+  font-size: 13px;
+  color: #9d9d9d;
+  font-weight: 500;
+  border: 1px solid #E4E4E4;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.room-apperment-area .single-item .text .bottom ul li {
+  font-size: 15px;
+  color: #9d9d9d;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.room-apperment-area .single-item .text .bottom ul li .svg-inline--fa {
+  margin-right: 5px;
+}
+
+.room-apperment-area .single-item .text .bottom h4 {
+  font-weight: 800;
+  color: #292928;
+  font-family: inherit;
+  font-size: 20px;
+  margin: 0;
+}
+
+.room-apperment-area .single-item .text .bottom h4 span {
+  position: absolute;
+  text-align: right;
+  right: 20px;
+}
+
+.room-apperment-area .single-item .text .bottom h4 span a {
+  font-size: 15px;
+  color: #070212;
+  margin-left: 10px;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.room-apperment-area .single-item .text .bottom h4 span a:hover {
+  color: #ff5a3c;
+}
+
+/*  ======================================
+        END ROOM APPERMENT AREA CSS
+    ======================================
+*/
+/*  =============================
+        START FOOTER AREA CSS
+    =============================
+*/
+.footer-area {
+  padding: 80px 0 80px;
+  background-color: #070212;
+}
+
+.footer-area .single-item .logo {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.footer-area .single-item p {
+  color: #ffffff;
+}
+
+.footer-area .single-item .social-icon {
+  text-align: left;
+}
+
+.footer-area .single-item .social-icon ul li button.btn {
+  border: 1px solid #ff5a3c;
+  border-radius: 0;
+  color: #ff5a3c;
+  padding: 0px 5px;
+}
+
+.footer-area .single-item .social-icon ul li a {
+  font-size: 18px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ff5a3c;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer-area .single-item .social-icon ul li a:hover {
+  color: #071c1f;
+}
+
+.footer-area .single-item .title {
+  margin-bottom: 30px;
+}
+
+.footer-area .single-item .title h4 {
+  font-size: 21px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer-area .single-item .link li {
+  display: block;
+  line-height: 30px;
+}
+
+.footer-area .single-item .link li a {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-area .single-item .link li a:hover {
+  color: #ff5a3c;
+}
+
+.footer-area .single-item .subscribe-area {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.footer-area .single-item .subscribe-area input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+}
+
+.footer-area .single-item .subscribe-area button {
+  position: absolute;
+  right: 0;
+  color: #ff5a3c;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+}
+
+.footer-area .single-item .pay-area {
+  margin-top: -10px;
+}
+
+.footer-area .single-item .pay-area img {
+  width: 100%;
+}
+
+/*  ===========================
+        END FOOTER AREA CSS
+    ===========================
+*/
+/*  =================================
+        START COPYRIGHT AREA CSS
+    =================================
+*/
+.copyright-area {
+  position: relative;
+  text-align: left;
+  padding: 20px 0;
+  background-color: #282b38;
+}
+
+.copyright-area p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.copyright-area ul {
+  text-align: right;
+}
+
+.copyright-area ul li {
+  margin-left: 15px;
+}
+
+.copyright-area ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.copyright-area ul li a:hover {
+  color: #ff5a3c;
+}
+
+/*  ==============================
+        END COPYRIGHT AREA CSS
+    ==============================
+*/
+/*  ======================================
+        START INNER BANNER AREA CSS
+    ======================================
+*/
+.inner-banner {
+  position: relative;
+  background-image: url(../image/inner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.inner-banner::before {
+  content: "";
+  position: absolute;
+  background-color: #070212;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .9;
+}
+
+.inner-banner .inner-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  top: 40%;
+}
+
+.inner-banner .inner-text h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.inner-banner .inner-text ul li {
+  margin: 0 5px;
+  color: #ffffff;
+}
+
+.inner-banner .inner-text ul li a {
+  color: #ff5a3c;
+  text-decoration: none;
+}
+
+/*  ======================================
+        END INNER BANNER AREA CSS
+    ======================================
+*/
+/*  ================================
+        START ABOUT SECTION CSS
+    ================================
+*/
+.about-section {
+  padding-bottom: 80px;
+}
+
+.about-section .about-area {
+  position: relative;
+}
+
+.about-section .about-area .about-details {
+  padding-right: 50px;
+}
+
+.about-section .about-area .about-details h2 {
+  font-size: 40px;
+  color: #071c1f;
+  font-weight: 700;
+  line-height: 60px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.about-section .about-area .about-details h2::before {
+  content: "";
+  position: absolute;
+  background-color: #ff5a3c;
+  width: 100px;
+  height: 2px;
+  bottom: -5px;
+  margin: auto;
+  left: 0;
+}
+
+.about-section .about-area .about-details p {
+  margin-bottom: 15px;
+}
+
+.about-section .about-area .about-details .list {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.about-section .about-area .about-details .list .icon {
+  background-color: #ff5a3c14;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.about-section .about-area .about-details .list .icon .svg-inline--fa {
+  color: #ff5a3c;
+}
+
+.about-section .about-area .about-details blockquote {
+  padding: 20px;
+  margin: 25px 0;
+  border-left: 4px solid;
+  border-color: #ff5a3c;
+  background-color: #ff5a3c14;
+}
+
+.about-section .about-area .about-details a {
+  text-decoration: none;
+  background-color: #ff5a3c;
+  color: #ffffff;
+  border: 1px solid #ff5a3c;
+  display: inline-block;
+  padding: 15px 50px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.about-section .about-area .about-details a:hover {
+  background-color: #ffffff;
+  border: 1px solid #ff5a3c;
+  color: #ff5a3c;
+}
+
+.about-section .about-area .about-img {
+  position: relative;
+}
+
+.about-section .about-area .about-img::before {
+  content: "";
+  position: absolute;
+  background-color: #ff5a3c;
+  width: 35px;
+  height: 80%;
+  left: -4%;
+  top: 10%;
+}
+
+/*  ==============================
+        END ABOUT SECTION CSS
+    ==============================
+*/
+/*  =============================
+        START VIDEO AREA CSS
+    =============================
+*/
+.video-area {
+  height: 350px;
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.video-area .video-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -100;
+}
+
+.video-area::before {
+  background: rgba(7, 2, 18, 0.8);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.video-area .video-play-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  /* background: #fa183d; */
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+}
+
+.video-area .video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #ba1f24;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+          animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-area .video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #fa183d;
+  border-radius: 50%;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.video-area .video-play-button:hover:after {
+  background-color: #da0528;
+}
+
+.video-area .video-play-button img {
+  position: relative;
+  z-index: 3;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.video-area .video-play-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 32px solid #fff;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+}
+
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.video-area .video-overlay {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+.video-area .video-overlay.open {
+  position: fixed;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.video-area .video-overlay-close {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  right: 20px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.video-area .video-overlay-close:hover {
+  color: #fa183d;
+}
+
+.video-area .video-overlay iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  /* width: 90%; */
+  /* height: auto; */
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+}
+
+/*  ==========================
+        END VIDEO AREA CSS
+    ==========================
+*/
+/*  ===================================
+        START INVESTMENT AREA CSS
+    ===================================
+*/
+.investment-area {
+  position: relative;
+}
+
+.investment-area .investment-details {
+  position: relative;
+  padding: 30px;
+  background-color: #ff5a3c;
+}
+
+.investment-area .investment-details h2 {
+  color: #ffffff;
+  font-size: 34px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.investment-area .investment-details p {
+  color: #ffffff;
+}
+
+.investment-area .investment-details a {
+  color: #ffffff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.investment-area .investment-details a:hover {
+  color: #071c1f;
+}
+
+.investment-area .investment-from-area {
+  position: relative;
+  border-radius: 0;
+}
+
+.investment-area .investment-from-area .form-group {
+  margin-bottom: 10px;
+}
+
+.investment-area .investment-from-area .form-group label {
+  font-size: 18px;
+  color: #071c1f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.investment-area .investment-from-area .form-group .form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ff5a3c;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  margin-bottom: 18px;
+}
+
+.investment-area .investment-from-area .form-group .form-control:focus-visible {
+  outline: #ff5a3c auto 1px;
+  border-radius: 0;
+}
+
+.investment-area .investment-from-area .form-control:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.investment-area .investment-from-area textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ff5a3c;
+  border-radius: 0 !important;
+}
+
+.investment-area .investment-from-area textarea:focus-visible {
+  outline: #ff5a3c auto 1px;
+  border-radius: 0;
+}
+
+.investment-area .investment-from-area .submit-btn a {
+  display: inline-block;
+  background-color: #ff5a3c;
+  border: 1px solid #ff5a3c;
+  color: #ffffff;
+  padding: 15px 50px;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.investment-area .investment-from-area .submit-btn a:hover {
+  background-color: #ffffff;
+  border: 1px solid #ff5a3c;
+  color: #ff5a3c;
+}
+
+/*  =================================
+        END INVESTMENT AREA CSS
+    =================================
+*/
+/*  ===================================
+        START DEVELOPMENT AREA CSS
+    ===================================
+*/
+.development-area {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.development-area .development-img-1 {
+  position: relative;
+}
+
+.development-area .development-img-1::before {
+  content: "";
+  position: absolute;
+  background-color: #ff5a3c;
+  width: 15px;
+  height: 90%;
+  right: -6px;
+  top: 15px;
+}
+
+.development-area .development-img-2 {
+  position: relative;
+}
+
+.development-area .development-img-2::before {
+  content: "";
+  position: absolute;
+  background-color: #ff5a3c;
+  width: 15px;
+  height: 90%;
+  left: -6px;
+  top: 15px;
+}
+
+.development-area .single-item {
+  margin-bottom: 50px;
+}
+
+.development-area .development-details {
+  position: relative;
+  top: 20px;
+}
+
+.development-area .development-details h3 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #071c1f;
+}
+
+.development-area .development-details a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #ff5a3c;
+  border: 1px solid #ff5a3c;
+  color: #ffffff;
+  margin-top: 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.development-area .development-details a:hover {
+  background-color: #ffffff;
+  color: #ff5a3c;
+}
+
+/*  =================================
+        END DEVELOPMENT AREA CSS
+    =================================
+*/
+/*  =============================
+        START SELL AREA CSS
+    =============================
+*/
+.sell-area {
+  padding-bottom: 80px;
+}
+
+.sell-area .sell-from-area {
+  position: relative;
+  border-radius: 0;
+}
+
+.sell-area .sell-from-area .form-group {
+  margin-bottom: 10px;
+}
+
+.sell-area .sell-from-area .form-group label {
+  font-size: 18px;
+  color: #071c1f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sell-area .sell-from-area .form-group .form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ff5a3c;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  margin-bottom: 18px;
+}
+
+.sell-area .sell-from-area .form-group .form-control:focus-visible {
+  outline: #ff5a3c auto 1px;
+  border-radius: 0;
+}
+
+.sell-area .sell-from-area .form-control:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sell-area .sell-from-area textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ff5a3c;
+  border-radius: 0 !important;
+}
+
+.sell-area .sell-from-area textarea:focus-visible {
+  outline: #ff5a3c auto 1px;
+  border-radius: 0;
+}
+
+.sell-area .sell-from-area .submit-btn a {
+  display: inline-block;
+  background-color: #ff5a3c;
+  border: 1px solid #ff5a3c;
+  color: #ffffff;
+  padding: 15px 50px;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sell-area .sell-from-area .submit-btn a:hover {
+  background-color: #ffffff;
+  border: 1px solid #ff5a3c;
+  color: #ff5a3c;
+}
+
+.sell-area .sell-details {
+  position: relative;
+  padding: 30px;
+  border: 1px solid #ff5a3c;
+}
+
+.sell-area .sell-details h2 {
+  color: #071c1f;
+  font-size: 34px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.sell-area .sell-details p {
+  color: #070212;
+}
+
+.sell-area .sell-details .single-item {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.sell-area .sell-details .single-item h4 {
+  font-weight: 600;
+  color: #071c1f;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.sell-area .sell-details a {
+  color: #ff5a3c;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sell-area .sell-details a:hover {
+  color: #071c1f;
+}
+
+/*  ==========================
+        END SELL AREA CSS
+    ==========================
+*/
+/*  ===============================
+        START CONTACT AREA CSS
+    ===============================
+*/
+.contact-area {
+  padding-bottom: 80px;
+}
+
+.contact-area .contact-info {
+  position: relative;
+}
+
+.contact-area .contact-info .single-item {
+  margin-bottom: 50px;
+  top: 7px;
+}
+
+.contact-area .contact-info .single-item .img-area {
+  position: absolute;
+}
+
+.contact-area .contact-info .single-item .text {
+  position: relative;
+  margin-left: 120px;
+}
+
+.contact-area .contact-info .single-item .text h4 {
+  font-size: 18px;
+  color: #071c1f;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact-area .contact-info .single-item .text p {
+  margin-bottom: 0;
+}
+
+.contact-area .contact-from {
+  position: relative;
+  border-radius: 0;
+}
+
+.contact-area .contact-from .form-group {
+  margin-bottom: 10px;
+}
+
+.contact-area .contact-from .form-group label {
+  font-size: 18px;
+  color: #071c1f;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contact-area .contact-from .form-group .form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ff5a3c;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  margin-bottom: 18px;
+}
+
+.contact-area .contact-from .form-group .form-control:focus-visible {
+  outline: #ff5a3c auto 1px;
+  border-radius: 0;
+}
+
+.contact-area .contact-from .form-control:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-area .contact-from textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ff5a3c;
+  border-radius: 0 !important;
+}
+
+.contact-area .contact-from textarea:focus-visible {
+  outline: #ff5a3c auto 1px;
+  border-radius: 0;
+}
+
+.contact-area .contact-from .submit-btn a {
+  display: inline-block;
+  background-color: #ff5a3c;
+  border: 1px solid #ff5a3c;
+  color: #ffffff;
+  padding: 15px 50px;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-area .contact-from .submit-btn a:hover {
+  background-color: #ffffff;
+  border: 1px solid #ff5a3c;
+  color: #ff5a3c;
+}
+
+.contact-area .title {
+  margin-bottom: 30px;
+}
+
+.contact-area .title h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #071c1f;
+}
+
+/*  ============================
+        END CONTACT AREA CSS
+    ============================
+*/
+/*  ===============================
+        START DOWNLOAD AREA CSS
+    ===============================
+*/
+.Download-area a {
+  display: inline-block;
+  background-color: #ff5a3c;
+  border: 1px solid #ff5a3c;
+  color: #ffffff;
+  padding: 15px 50px;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin-top: 40px;
+}
+
+.Download-area a:hover {
+  background-color: #ffffff;
+  border: 1px solid #ff5a3c;
+  color: #ff5a3c;
+}
+
+/*  =============================
+        END DOWNLOAD AREA CSS
+    =============================
+*/
+/*  ====================
+        END TOTOP CSS
+    ====================
+*/
+div#toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #071c1f;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 99;
+  opacity: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+div#toTop:hover {
+  background-color: #071c1f;
+  color: #ffffff;
+  /* IE 9 */
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-box-shadow: 0 10px 10px rgba(5, 20, 65, 0.39);
+  box-shadow: 0 10px 10px rgba(5, 20, 65, 0.39);
+}
+
+/*  =====================
+        END TOTOP CSS
+    =====================
+*/
+/*# sourceMappingURL=style.css.map */

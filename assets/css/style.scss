@@ -1,0 +1,1905 @@
+
+/*  ========================
+        START DEFULT CSS
+    ========================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$main-bg: #071c1f;
+$main-bg2: #070212;
+$sec-bg: #ff5a3c;
+$white: #ffffff;
+$black: #000000;
+$text-color: #656565;
+$bg-color: #f9f6f8;
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+        display: inline-block;
+    }
+}
+h1, h2, h3, h4, h5, h6, a,li,span{
+    font-family: 'Nunito Sans', sans-serif;
+}
+p{
+    color: $text-color;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-padding{
+    padding: 80px 0 0; 
+}
+.section-padding-2{
+    padding: 80px 0 50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $main-bg;
+    border-radius: 30px;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*  ======================
+        END DEFULT CSS
+    ======================
+*/
+
+/*  ===============================
+        START SECTION TITLE CSS
+    ===============================
+*/
+
+.section-title {
+    position: relative;
+    text-align: center;
+    max-width: 980px;
+    margin: auto;
+    margin-bottom: 60px;
+    h2 {
+        font-size: 40px;
+        color: $main-bg;
+        font-weight: 700;
+        line-height: 60px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: #ff5a3c;
+            width: 100px;
+            height: 2px;
+            bottom: -5px;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+    }
+    p{
+        margin: 15px 0 0;
+    }
+}
+
+/*  ============================
+        END SECTION TITLE CSS
+    ============================
+*/
+
+/*  ==========================
+        START MAIN BTN CSS
+    ==========================
+*/
+
+.main-btn{
+    font-size: 16px;
+    background: linear-gradient(to right, $main-bg 0%, $sec-bg 100%);
+    color: $white;
+    padding: 10px 40px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+    &:hover{
+        background: linear-gradient(to right, $sec-bg 0%, $main-bg 100%);
+        color: $white;
+    }
+}
+
+/*  =======================
+        END MAIN BTN CSS
+    =======================
+*/
+
+.top-bar-are {
+    position: relative;
+    padding: 10px;
+    .info-area{
+        ul{
+            li{
+                margin-right: 15px;
+                color: $main-bg;
+                .svg-inline--fa{
+                    color: $sec-bg;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .social-icon {
+        text-align: right;
+        ul{
+            li{
+                button.btn {
+                    border: 1px solid $sec-bg;
+                    border-radius: 0;
+                    color: $sec-bg;
+                    padding: 0px 5px;
+                }
+                a{
+                    font-size: 18px;
+                    margin-left: 15px;
+                    text-decoration: none;
+                    color: $sec-bg;
+                    transition: all .5s;
+                    &:hover{
+                        color: $main-bg;
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+/*  ==========================
+        START NAVBAR CSS
+    ==========================
+*/
+
+.bg-light {
+    background-color: $main-bg !important;
+}
+.navbar-expand-lg{
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    .navbar-brand{
+        color: $white;
+    }
+    .navbar-nav{
+        li.nav-item {
+            padding-left: 15px;
+        }
+        .nav-link {
+            font-size: 16px;
+            font-weight: 500;
+            color: $white;
+            display: inline-block;
+            position: relative;
+            transition: all .5s;
+            &:hover{
+                color: $sec-bg;
+            }
+        }
+        .nav-link.active, .show>.nav-link {
+            color: $sec-bg !important;
+        }
+        .nav-link.active::before, .show>.nav-link::before {
+            opacity: 1;
+        }
+        .nav-link.btn {
+            background-color: #ff5a3c;
+            color: #fff;
+            border: none;
+            border-radius: 0;
+            padding: 8px 15px;
+            width: 130px;
+            transition: all .5s;
+            &:hover{
+                background-color: $white;
+                color: $main-bg;
+            }
+        }
+    }
+} 
+.menu-shrink {
+    position: fixed !important;
+    color: $white;
+    background-color: $main-bg !important;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    z-index: 999;
+    top: 0;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    animation:fadeInDown .5s both .5s;
+    
+    .navbar-brand{
+        color: $main-bg;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+        font-weight: 500;
+        color: $white !important;
+        display: inline-block;
+        position: relative;
+        transition: all .5s;
+        &:hover{
+            color: $sec-bg;
+        }
+    }
+}
+
+/*  =======================
+        END NAVBAR CSS
+    =======================
+*/
+
+/*  =============================
+        START BANNER AREA CSS
+    =============================
+*/
+
+.banner-area{
+    position: relative;
+    overflow: hidden;
+
+    // Define breakpoints
+    $breakpoints: (
+        mobile: 767px,
+        tablet: 1025px,
+        laptop: 1026px,
+        computer: 1440px
+    );
+    @mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
+    @mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+    }
+    @mixin laptop {
+    @media screen and (min-width: map-get($breakpoints, laptop)){
+        @content;
+    }
+    }
+    @mixin computer {
+    @media screen and (min-width: map-get($breakpoints, computer)){
+        @content;
+    }
+    }
+    @mixin horizontal {
+    @media screen and (orientation:landscape){
+        @content;
+    }
+    }
+    // Text formatting
+    @mixin text {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    @include tablet {
+        text-align: center;
+    }
+    }
+    @mixin title {
+    font-weight:700;
+    margin: 0;
+    text-transform:uppercase;
+    }
+    .carrousel {
+    width: 100%;
+    max-width: 1440px;
+    margin:auto;
+    height: 100vh;
+    @include tablet {
+        max-width:100%;
+    }
+
+    &__link {
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        @include tablet {
+        max-width: 100vw;
+        max-height: 50vh;
+        }
+        @include mobile {
+        @include horizontal {
+            max-height: 100vh;
+        }
+        }
+        @media screen and (max-width: 812px) and (orientation:landscape){
+        max-height: 100vh; // Fix for the iPhone X in landscape
+        }
+    }
+
+    &__image{
+        @include laptop {
+        width:100%;
+        }
+        @include tablet {
+        max-height:100vw;
+        }
+    }
+
+    &__captions{
+        position: absolute;
+        left: 0;
+        top: 0%;
+        max-width: 50%;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.40);
+        @include tablet {
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        }
+
+        &.captions-image {
+        img {
+            @include tablet{
+            margin: auto;
+            }
+            @include mobile{
+            width: 80%;
+            @include horizontal {
+                width: 100vh;
+            }
+            }
+            @media screen and (max-width: 812px) and (orientation:landscape){
+            width: 100vh;; // Fix for the iPhone X in landscape
+            }
+        }
+        }
+    }
+    }
+    a{
+        text-decoration: none;
+    }
+    .captions-container {
+        padding: 25px;
+        border-radius: .5rem;
+        position: relative;
+        left: 10%;
+        width: 90%;
+    @include tablet {
+        width: 50%;
+        margin:auto;
+    }
+
+    &__title {
+        @include text;
+        @include title;
+        font-size:3em;
+        @include mobile {
+        font-size: 1.25rem;
+        }
+    }
+
+    &__subtitle {
+        @include text;
+        @include title;
+        font-size:1em;
+        @include mobile {
+        font-size: 1rem;
+        }
+    }
+
+    &__text{
+        @include text;
+        font-size:.9em;
+        font-weight:400;
+        padding:10px 0;
+        line-height:1.65em;
+    }
+    }
+    .title{
+        p{
+            color: $main-bg;
+            font-weight: 600;
+            margin-bottom: 20px;
+            .svg-inline--fa{
+                color: $sec-bg;
+                margin-right: 10px;
+            }
+        }
+        .title-2{
+            color: $main-bg;
+        }
+        h4{
+            font-weight: 700;
+            color: $main-bg2;
+            margin-bottom: 30px;
+            font-size: 34px;
+        }
+    }
+    .heading{
+        h1 {
+            color: $main-bg;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: $main-bg2;
+            font-size: 16px;
+        }
+        .link{
+            text-decoration: underline;
+            color: $main-bg;
+            display: inline-block;
+            margin: 0 0 10px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all .5s;
+            &:hover{
+                color: $sec-bg;
+            }
+        }
+        ul{
+            margin-bottom: 15px;
+            li{
+                position: relative;
+                display: block;
+                margin-left: 18px;
+                color: $main-bg;
+                line-height: 30px;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    background-color: $main-bg;
+                    width: 10px;
+                    height: 2px;
+                    left: -15px;
+                    top: 14px;
+                }
+            }
+        }
+        h4 {
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 30px 0;
+        }
+    }
+    img.carrousel-image-3 {
+        position: relative;
+        margin: auto;
+        top: 15%;
+    }
+    .btn-wrapper{
+        .default-one{
+            display: inline-block;
+            padding: 8px 30px;
+            background-color: $sec-bg;
+            color: $white;
+            text-decoration: none;
+            margin-right: 30px;
+            transition: all .5s;
+            &:hover{
+                background-color: $main-bg;
+            }
+        }
+        a.ltn__video-play-btn {
+            width: 50px;
+            height: 50px;
+            line-height: 53px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            color: $sec-bg;
+            background-color: $white;
+            font-size: 22px;
+            transition: all .5s;
+            &:hover{
+                background-color: $sec-bg;
+                color: $white;
+            }
+        }
+    }
+    .slick-arrow{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        z-index: 10;
+        bottom: 20px;
+        right: 10%;
+    }
+    .slick-prev {
+    left: 20px;
+    background: url(https://image.flaticon.com/icons/png/512/318/318477.png) no-repeat;
+    background-size: contain;
+    filter: invert(100%);
+    }
+    .slick-next {
+    right: 20px;
+    background: url(https://image.flaticon.com/icons/png/512/318/318476.png) no-repeat;
+    background-size: contain;
+    filter: invert(100%);
+    }
+    ul.slick-dots {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 30px;
+        li{
+            display: block;
+            line-height: 1;
+        }
+        button {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            padding: 0;
+            text-indent: -999px;
+            overflow: hidden;
+            cursor: pointer;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid $sec-bg;   
+            opacity: .5;
+            -webkit-transition: opacity .6s ease;
+            transition: opacity .6s ease;
+            &:hover {
+                background-color: $sec-bg;
+                opacity: 1;
+            }
+        }
+        li.slick-active button {
+            background-color: $sec-bg;
+            opacity: 1;
+        }
+    }
+    .slick-custom-arrow.slick-custom-arrow-left.slick-arrow {
+        position: absolute;
+        right: 5%;
+        bottom: 20px;
+        background-color: $white;
+        color: $sec-bg;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius:0;
+        cursor: pointer; 
+        margin-right: 5px;
+      }
+      
+    .slick-custom-arrow.slick-custom-arrow-right.slick-arrow {
+        position: absolute;
+        right: 2%;
+        bottom: 20px;
+        background-color: $white;
+        color: $sec-bg;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 0;
+        cursor: pointer;
+      }
+}
+
+/*  ===========================
+        END BANNER AREA CSS
+    ===========================
+*/
+
+/*  ==============================
+        START WELCOME AREA CSS
+    ==============================
+*/
+
+.services-area{
+    .single-services{
+        margin-bottom: 30px;
+        padding: 40px 30px 35px;
+        -webkit-box-shadow: rgba(100, 100, 111, 0.20) 0px 7px 29px 0px;
+        box-shadow: rgba(100, 100, 111, 0.20) 0px 7px 29px 0px;
+        text-align: center;
+        transition: all .5s;
+        &:hover{
+            box-shadow: none;
+        }
+        .text{
+            h3{
+                font-weight: 800;
+                color: $main-bg;
+            }
+            a{
+                text-decoration: none;
+                color: $sec-bg;
+                transition: all .5s;
+                &:hover{
+                    color: $main-bg;
+                }
+            }
+        }
+    }
+}
+
+/*  ============================
+        END WELCOME AREA CSS
+    ============================
+*/
+
+/*  ============================
+        START JOIN AREA CSS
+    ============================
+*/
+
+.search-area{
+    position: relative;
+    padding: 80px 0;
+    form {
+        position: relative;
+        border: 1px solid $sec-bg;
+        padding: 50px;
+        -webkit-box-shadow: rgba(100, 100, 111, 0.20) 0px 7px 29px 0px;
+        box-shadow: rgba(100, 100, 111, 0.20) 0px 7px 29px 0px;
+        border-radius: 0;
+        select.form-select {    
+            padding: 15px;
+            margin-bottom: 30px;
+            border: 1px solid $sec-bg;
+            border-radius: 0;
+        }
+        input[type="text"] {
+            border: 1px solid $sec-bg;
+            border-radius: 0;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        label.form-label {
+            font-size: 18px;
+            color: $main-bg2;
+            font-weight: 600;
+        }
+        a {
+            background-color: #ff5a3c;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 30px;
+            display: inline-block;
+            margin-top: 70px;
+            transition: all .5s;
+            &:hover{
+                background-color: $main-bg2;
+            }
+        }
+        h4{
+            font-size: 22px;
+            color: #070212;
+            font-weight: 700;
+            float: left;
+        }
+    }
+    .form-select:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+    .slider-labels {
+        margin-top: 2px;
+        margin-left: 15px;
+        display: inline-block;
+        color: #071c1f;
+        font-size: 16px;
+        font-weight: 600;
+    }
+  
+  .caption {
+    display: inline-block;
+}
+.rang-title {
+    position: relative;
+    margin: 15px 0 50px;
+}
+  .noUi-target,.noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .noUi-target {
+    position: relative;
+    direction: ltr;
+  }
+  
+  .noUi-base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  /* Fix 401 */
+  }
+  
+  .noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .noUi-handle {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .noUi-stacking .noUi-handle {
+  /* This class is applied to the lower origin when
+     its values is > 50%. */
+    z-index: 10;
+  }
+  
+  .noUi-state-tap .noUi-origin {
+    -webkit-transition: left 0.3s,top .3s;
+    transition: left 0.3s,top .3s;
+  }
+  
+  .noUi-state-drag * {
+    cursor: inherit !important;
+  }
+  
+  /* Painting and performance;
+   * Browsers can paint handles in their own layer.
+   */
+  .noUi-base,.noUi-handle {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  /* Slider size and handle placement;
+   */
+  .noUi-horizontal {
+    height: 4px;
+  }
+  
+  .noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    background-color: $sec-bg;
+
+    
+  }
+  .noUi-handle.noUi-handle-upper{
+    &::after {
+        position: absolute;
+        content: "";
+        top: -30px;
+        left: -65px;
+        background-image: url(../image/car.png);
+        z-index: 99;
+        width: 125px;
+        height: 50px;
+        background-repeat: no-repeat;
+    }
+
+  }
+  
+  /* Styling;
+   */
+  .noUi-background {
+    background: #adb5bd;
+  }
+  
+  .noUi-connect {
+    background: $sec-bg;
+    -webkit-transition: background 450ms;
+    transition: background 450ms;
+  }
+  
+  .noUi-origin {
+    border-radius: 2px;
+  }
+  
+  .noUi-target {
+    border-radius: 2px;
+    margin-top: 25px;
+  }
+  
+  /* Handles and cursors;
+   */
+  .noUi-draggable {
+    cursor: w-resize;
+  }
+  
+  .noUi-vertical .noUi-draggable {
+    cursor: n-resize;
+  }
+  
+  .noUi-handle {
+    cursor: default;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+  }
+  
+  .noUi-handle:active {
+    border: 8px solid #345DBB;
+    border: 8px solid rgba(53,93,187,0.38);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    left: -14px;
+    top: -14px;
+  }
+  
+  /* Disabled state;
+   */
+  [disabled].noUi-connect,[disabled] .noUi-connect {
+    background: #B8B8B8;
+  }
+  
+  [disabled].noUi-origin,[disabled] .noUi-handle {
+    cursor: not-allowed;
+  }
+}
+
+/*  =========================
+        END JOIN AREA CSS
+    =========================
+*/
+
+/*  ======================================
+        START ROOM APPERMENT AREA CSS
+    ======================================
+*/
+
+.room-apperment-area{
+    position: relative;
+    padding-bottom: 50px;
+    .single-item{
+        position: relative;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        -webkit-box-shadow: rgba(100, 100, 111, 0.20) 0px 7px 29px 0px;
+        box-shadow: rgba(100, 100, 111, 0.20) 0px 7px 29px 0px;
+        transition: all .5s;
+        &:hover{
+            box-shadow: none;
+        }
+        .img-area{
+            border-radius: 5px ;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            .top{
+                border: 1px solid #E4E4E4;
+                padding: 0px 20px 20px;
+                margin-top: -3px;
+                a {
+                    font-weight: 800;
+                    color: #292928;
+                    font-family: inherit;
+                    font-size: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    display: inline-block;
+                    text-decoration: none;
+                    transition: .3s;
+                    &:hover{
+                        color: $sec-bg;
+                    }
+                }
+                h5 {
+                    font-size: 16px;
+                    color: #9d9d9d;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                    .svg-inline--fa{
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .bottom{
+                padding: 20px 20px 20px;
+                font-size: 13px;
+                color: #9d9d9d;
+                font-weight: 500;
+                border: 1px solid #E4E4E4;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+                ul{
+                    li{
+                        font-size: 15px;
+                        color: #9d9d9d;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                        margin-right: 10px;
+                        .svg-inline--fa{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                h4{
+                    font-weight: 800;
+                    color: #292928;
+                    font-family: inherit;
+                    font-size: 20px;
+                    margin: 0;
+                    span {
+                        position: absolute;
+                        text-align: right;
+                        right: 20px;
+                        a{
+                            font-size: 15px;
+                            color: $main-bg2;
+                            margin-left: 10px;
+                            text-decoration: none;
+                            transition: .3s;
+                            &:hover{
+                                color: $sec-bg;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+/*  ======================================
+        END ROOM APPERMENT AREA CSS
+    ======================================
+*/
+
+/*  =============================
+        START FOOTER AREA CSS
+    =============================
+*/
+
+.footer-area {
+    padding: 80px 0 80px;
+    background-color: $main-bg2;
+    .single-item{
+        .logo{
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        p{
+            color: $white;
+        }
+        .social-icon {
+            text-align: left;
+            ul{
+                li{
+                    button.btn {
+                        border: 1px solid $sec-bg;
+                        border-radius: 0;
+                        color: $sec-bg;
+                        padding: 0px 5px;
+                    }
+                    a{
+                        font-size: 18px;
+                        margin-right: 15px;
+                        text-decoration: none;
+                        color: $sec-bg;
+                        transition: all .5s;
+                        &:hover{
+                            color: $main-bg;
+                        }
+
+                    }
+
+                }
+            }
+        }
+        .title{
+            margin-bottom: 30px;
+            h4{
+                font-size: 21px;
+                color: $white;
+                margin: 0;
+            
+            }
+        }
+        .link{
+            li{
+                display: block;
+                line-height: 30px;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    transition: all .3s;
+                    &:hover{
+                        color: $sec-bg;
+                    }
+                }
+            }
+        }
+        .subscribe-area{
+            position: relative;
+            margin-bottom: 20px;
+            input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                border-radius: 0;
+                border: none;
+            }
+            button{
+                position: absolute;
+                right: 0;
+                color: #ff5a3c;
+                background-color: transparent;
+                padding: 10px;
+                border: none;
+            }
+        }
+        .pay-area{
+            margin-top: -10px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*  ===========================
+        END FOOTER AREA CSS
+    ===========================
+*/
+
+/*  =================================
+        START COPYRIGHT AREA CSS
+    =================================
+*/
+
+.copyright-area{
+    position: relative;
+    text-align: left;
+    padding: 20px 0;
+    background-color: #282b38;
+    p{
+        margin: 0;
+        color: $white;
+    }
+    ul{
+        text-align: right;
+        li{
+            margin-left: 15px;
+            a{
+                color: $white;
+                text-decoration: none;
+                font-size: 18px;
+                transition: .3s;
+                &:hover{
+                    color: $sec-bg;
+                }
+            }
+        }
+    }
+}
+
+/*  ==============================
+        END COPYRIGHT AREA CSS
+    ==============================
+*/
+
+/*  ======================================
+        START INNER BANNER AREA CSS
+    ======================================
+*/
+
+.inner-banner{
+    position: relative;
+    background-image: url(../image/inner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: $main-bg2;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: .9;
+    }
+    .inner-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        top: 40%;
+        h1{
+            color: $white;
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        ul{
+            li{
+                margin: 0 5px;
+                color: $white;
+                a{
+                    color: $sec-bg;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*  ======================================
+        END INNER BANNER AREA CSS
+    ======================================
+*/
+
+
+/*  ================================
+        START ABOUT SECTION CSS
+    ================================
+*/
+
+.about-section{
+    padding-bottom: 80px;
+    .about-area{
+        position: relative;
+        .about-details{
+            padding-right: 50px;
+                h2 {
+                    font-size: 40px;
+                    color: $main-bg;
+                    font-weight: 700;
+                    line-height: 60px;
+                    position: relative;
+                    margin-bottom: 30px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: #ff5a3c;
+                        width: 100px;
+                        height: 2px;
+                        bottom: -5px;
+                        margin: auto;
+                        left: 0;
+                    }
+                }
+            p {
+                margin-bottom: 15px;
+            }
+            .list{
+                position: relative;
+                margin-bottom: 20px;
+                .icon{
+                    background-color: #ff5a3c14;
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: inline-block;
+                    margin-right: 15px;
+                    .svg-inline--fa{
+                        color: $sec-bg;
+                    }
+                }
+                
+            }
+            blockquote {
+                padding: 20px;
+                margin: 25px 0;
+                border-left: 4px solid;
+                border-color: $sec-bg;
+                background-color: #ff5a3c14;
+            }
+            a{
+                text-decoration: none;
+                background-color: $sec-bg;
+                color: $white;
+                border: 1px solid $sec-bg;
+                display: inline-block;
+                padding: 15px 50px;
+                transition: all .5s;
+                &:hover{
+                    background-color: $white;
+                    border: 1px solid $sec-bg;
+                    color: $sec-bg;
+                }
+            }
+        }
+        .about-img{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background-color: $sec-bg;
+                width: 35px;
+                height: 80%;
+                left: -4%;
+                top: 10%;
+            }
+        }
+    }
+}
+
+/*  ==============================
+        END ABOUT SECTION CSS
+    ==============================
+*/
+
+/*  =============================
+        START VIDEO AREA CSS
+    =============================
+*/
+
+.video-area{	
+    height: 350px;
+	position: relative;
+	background-position: center ;
+	background-size: contain;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+
+    .video-background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: auto;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -100;
+    }
+
+&::before {
+	background: rgba(7, 2, 18, .8);
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+    .video-play-button {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        box-sizing: content-box;
+        display: block;
+        width: 32px;
+        height: 44px;
+        /* background: #fa183d; */
+        border-radius: 50%;
+        padding: 18px 20px 18px 28px;
+    }
+    
+    .video-play-button:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 80px;
+        height: 80px;
+        background: #ba1f24;
+        border-radius: 50%;
+        animation: pulse-border 1500ms ease-out infinite;
+    }
+    
+    .video-play-button:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 80px;
+        height: 80px;
+        background: #fa183d;
+        border-radius: 50%;
+        transition: all 200ms;
+    }
+    
+    .video-play-button:hover:after {
+        background-color: darken(#fa183d, 10%);
+    }
+    
+    .video-play-button img {
+        position: relative;
+        z-index: 3;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+    
+    .video-play-button span {
+        display: block;
+        position: relative;
+        z-index: 3;
+        width: 0;
+        height: 0;
+        border-left: 32px solid #fff;
+        border-top: 22px solid transparent;
+        border-bottom: 22px solid transparent;
+    }
+    
+    @keyframes pulse-border {
+        0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+        }
+        100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+        }
+    }
+    .video-overlay {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.80);
+        opacity: 0;
+        transition: all ease 500ms;
+    }
+    
+    .video-overlay.open {
+        position: fixed;
+        z-index: 1000;
+        opacity: 1;
+    }
+    
+    .video-overlay-close {
+        position: absolute;
+        z-index: 1000;
+        top: 15px;
+        right: 20px;
+        font-size: 36px;
+        line-height: 1;
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 200ms;
+    }
+    
+    .video-overlay-close:hover {
+        color: #fa183d;
+    }
+    
+    .video-overlay iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        /* width: 90%; */
+        /* height: auto; */
+        box-shadow: 0 0 15px rgba(0,0,0,0.75);
+    }
+}
+
+/*  ==========================
+        END VIDEO AREA CSS
+    ==========================
+*/
+
+/*  ===================================
+        START INVESTMENT AREA CSS
+    ===================================
+*/
+
+.investment-area{
+    position: relative;
+    .investment-details {
+        position: relative;
+        padding: 30px;
+        background-color: $sec-bg;
+        h2{
+            color: $white;
+            font-size: 34px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        p{
+            color: $white;
+        }
+        a{
+            color: $white;
+            transition: all .5s;
+            &:hover{
+                color: $main-bg;
+            }
+        }
+    }
+    .investment-from-area{
+        position: relative;
+        border-radius: 0;
+        .form-group {
+            margin-bottom: 10px;
+            label {
+                font-size: 18px;
+                color: $main-bg;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            .form-control {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ff5a3c;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border-radius: 0;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                margin-bottom: 18px;
+                &:focus-visible {
+                    outline: $sec-bg auto 1px;
+                    border-radius: 0;
+                }
+            }
+        }
+        .form-control:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid $sec-bg;
+            border-radius: 0 !important;
+            &:focus-visible {
+                outline: $sec-bg auto 1px;
+                border-radius: 0;
+            }
+        }
+        .submit-btn{
+            a{
+                display: inline-block;
+                background-color: $sec-bg;
+                border: 1px solid $sec-bg;
+                color: $white;
+                padding: 15px 50px;
+                text-decoration: none;
+                transition: all .5s;
+                &:hover{
+                    background-color: $white;
+                    border: 1px solid $sec-bg;
+                    color: $sec-bg;
+                }
+            }
+        }
+        
+    }
+}
+
+/*  =================================
+        END INVESTMENT AREA CSS
+    =================================
+*/
+
+/*  ===================================
+        START DEVELOPMENT AREA CSS
+    ===================================
+*/
+
+.development-area{
+    position: relative;
+    padding-bottom: 30px;
+    .development-img-1 {
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: $sec-bg;
+            width: 15px;
+            height: 90%;
+            right: -6px;
+            top: 15px;
+        }
+    }
+    .development-img-2 {
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: $sec-bg;
+            width: 15px;
+            height: 90%;
+            left: -6px;
+            top: 15px;
+        }
+    }
+    .single-item{
+        margin-bottom: 50px;
+        
+    }
+    .development-details{
+        position: relative;
+        top: 20px;
+        h3{
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: $main-bg;
+        }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 30px;
+            background-color: $sec-bg;
+            border: 1px solid $sec-bg;
+            color: $white;
+            margin-top: 20px;
+            transition: all .5s;
+            &:hover{
+                background-color: $white;
+                color: $sec-bg;
+            }
+        }
+    }
+}
+
+/*  =================================
+        END DEVELOPMENT AREA CSS
+    =================================
+*/
+
+/*  =============================
+        START SELL AREA CSS
+    =============================
+*/
+
+.sell-area{
+    padding-bottom: 80px;
+    .sell-from-area{
+        position: relative;
+        border-radius: 0;
+        .form-group {
+            margin-bottom: 10px;
+            label {
+                font-size: 18px;
+                color: $main-bg;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            .form-control {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ff5a3c;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border-radius: 0;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                margin-bottom: 18px;
+                &:focus-visible {
+                    outline: $sec-bg auto 1px;
+                    border-radius: 0;
+                }
+            }
+        }
+        .form-control:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid $sec-bg;
+            border-radius: 0 !important;
+            &:focus-visible {
+                outline: $sec-bg auto 1px;
+                border-radius: 0;
+            }
+        }
+        .submit-btn{
+            a{
+                display: inline-block;
+                background-color: $sec-bg;
+                border: 1px solid $sec-bg;
+                color: $white;
+                padding: 15px 50px;
+                text-decoration: none;
+                transition: all .5s;
+                &:hover{
+                    background-color: $white;
+                    border: 1px solid $sec-bg;
+                    color: $sec-bg;
+                }
+            }
+        }
+        
+    }
+    .sell-details{
+        position: relative;
+        padding: 30px;
+        border: 1px solid $sec-bg;
+        h2{
+            color: $main-bg;
+            font-size: 34px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        p{
+            color: $main-bg2;
+        }
+        .single-item {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            h4{
+                font-weight: 600;
+                color: $main-bg;
+                font-size: 20px;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+        }
+        a{
+            color: $sec-bg;
+            transition: all .5s;
+            &:hover{
+                color: $main-bg;
+            }
+        }
+    }
+}
+
+/*  ==========================
+        END SELL AREA CSS
+    ==========================
+*/
+
+/*  ===============================
+        START CONTACT AREA CSS
+    ===============================
+*/
+
+.contact-area{
+    padding-bottom: 80px;
+    .contact-info {
+        position: relative;
+        .single-item{
+            margin-bottom: 50px;
+            top: 7px;
+            .img-area {
+                position: absolute;
+            }
+            .text {
+                position: relative;
+                margin-left: 120px;
+                h4{
+                    font-size: 18px;
+                    color: $main-bg;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .contact-from{
+        position: relative;
+        border-radius: 0;
+        .form-group {
+            margin-bottom: 10px;
+            label {
+                font-size: 18px;
+                color: $main-bg;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .form-control {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ff5a3c;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border-radius: 0;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                margin-bottom: 18px;
+                &:focus-visible {
+                    outline: $sec-bg auto 1px;
+                    border-radius: 0;
+                }
+            }
+        }
+        .form-control:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid $sec-bg;
+            border-radius: 0 !important;
+            &:focus-visible {
+                outline: $sec-bg auto 1px;
+                border-radius: 0;
+            }
+        }
+        .submit-btn{
+            a{
+                display: inline-block;
+                background-color: $sec-bg;
+                border: 1px solid $sec-bg;
+                color: $white;
+                padding: 15px 50px;
+                text-decoration: none;
+                transition: all .5s;
+                &:hover{
+                    background-color: $white;
+                    border: 1px solid $sec-bg;
+                    color: $sec-bg;
+                }
+            }
+        }
+    }
+
+    .title {
+        margin-bottom: 30px;
+        h2{
+            font-size: 40px;
+            margin-bottom: 0;
+            font-weight: 700;
+            color: $main-bg;
+        }
+    }
+}
+
+/*  ============================
+        END CONTACT AREA CSS
+    ============================
+*/
+
+/*  ===============================
+        START DOWNLOAD AREA CSS
+    ===============================
+*/
+
+.Download-area{
+    a{
+        display: inline-block;
+        background-color: $sec-bg;
+        border: 1px solid $sec-bg;
+        color: $white;
+        padding: 15px 50px;
+        text-decoration: none;
+        transition: all .5s;
+        margin-top: 40px;
+        &:hover{
+            background-color: $white;
+            border: 1px solid $sec-bg;
+            color: $sec-bg;
+        }
+    }
+}
+
+/*  =============================
+        END DOWNLOAD AREA CSS
+    =============================
+*/
+
+/*  ====================
+        END TOTOP CSS
+    ====================
+*/
+
+div#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $main-bg;
+    color: $white;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+    &:hover {
+        background-color: $main-bg;
+        color: $white;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        transform: rotate(0deg);
+        -webkit-box-shadow: 0 10px 10px rgba(5, 20, 65, 0.39);
+                box-shadow: 0 10px 10px rgba(5, 20, 65, 0.39);
+      }
+}
+
+/*  =====================
+        END TOTOP CSS
+    =====================
+*/
+

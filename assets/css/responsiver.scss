@@ -1,0 +1,256 @@
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+    .banner-area .carrousel__captions {
+        left: 0;
+        width: 65%;
+        max-width: 65%;
+    }
+    .banner-area .captions-container {
+        width: 88%;
+        margin: auto;
+        left: 0;
+        padding-right: 0;
+    }
+    .banner-area img.carrousel-image-3 {
+        position: relative;
+        margin: unset;
+        top: 50%;
+        width: 75%;
+        margin-left: auto;
+    }
+    .about-section .about-area .about-img::before {
+        left: -2%;
+    }
+    .about-section .about-area .about-details {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .development-area .development-details a {
+        margin-top: 5px;
+    }
+    .section-title {
+        max-width: 780px;
+    }
+    .footer-area .single-item .title h4 {
+        font-size: 18px;
+        font-weight: 800;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .navbar-light .navbar-toggler {
+        background-color: #ff5a3c;
+        border-radius: 0;
+        padding: 6px;
+    }
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+    .banner-area .captions-container {
+        width: 100%;
+        margin: auto;
+        left: 0;
+    }
+    
+    .banner-area img.carrousel-image-3 {
+        position: relative;
+        margin: auto;
+        top: 15%;
+        display: none;
+    }
+    .banner-area .carrousel__image {
+        max-height: 100%;
+    }
+    .banner-area .heading h1 {
+        font-size: 27px;
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+    .banner-area .slick-custom-arrow.slick-custom-arrow-right.slick-arrow, .banner-area .slick-custom-arrow.slick-custom-arrow-left.slick-arrow {
+        display: none !important;
+    }
+    .banner-area ul.slick-dots {
+        position: absolute;
+        text-align: center;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        top: unset;
+    }
+    .banner-area ul.slick-dots li {
+        display: inline-block;
+        line-height: 1;
+        margin: 0 2px;
+    }
+    .section-title {
+        max-width: 780px;
+    }
+    .footer-area{
+        padding-bottom: 40px;
+        .single-item {
+            margin-bottom: 40px;
+            .title {
+                margin-bottom: 20px;
+            }
+        } 
+    } 
+    .copyright-area ul li a {
+        font-size: 15px;
+    }
+    .about-section .about-area .about-details {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .investment-area .investment-details {
+        margin-bottom: 40px;
+    }
+    .development-area .development-details {
+        position: relative;
+        top: 0;
+    }
+    .development-area .text-end {
+        text-align: left!important;
+    }
+    .sell-area .sell-details {
+        margin-bottom: 40px;
+    }
+    .services-area .single-services {
+        max-width: 500px;
+        margin: 0 auto 30px auto;
+    }
+    .development-area .development-details h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .development-area .development-details a {
+        margin-top: 0;
+    }
+    .development-area .development-img-1::before, .development-area .development-img-2::before {
+        top: 10px;
+    }
+  
+}
+@media only screen and (max-width: 767px){
+    .top-bar-are .info-area{
+        margin-bottom: 10px;
+        text-align: center;
+        ul li {
+            margin-right: 15px;
+            color: #071c1f;
+            font-size: 14px;
+        }
+    } 
+    .top-bar-are .social-icon {
+        text-align: center;
+    }
+    .navbar-light .navbar-toggler {
+        background-color: #ff5a3c;
+        border-radius: 0;
+        padding: 6px;
+    }
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+    .banner-area .captions-container {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        left: 0;
+    }
+    .banner-area img.carrousel-image-3 {
+        position: relative;
+        margin: auto;
+        top: 15%;
+        display: none;
+    }
+    .banner-area .carrousel__image {
+        max-height: 100%;
+    }
+    .banner-area .heading h1 {
+        font-size: 27px;
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+    .banner-area .heading ul {
+        margin-bottom: 15px;
+        display: none;
+    }
+    .banner-area .slick-custom-arrow.slick-custom-arrow-right.slick-arrow, .banner-area .slick-custom-arrow.slick-custom-arrow-left.slick-arrow {
+        display: none !important;
+    }
+    .banner-area ul.slick-dots {
+        position: absolute;
+        text-align: center;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        top: unset;
+    }
+    .banner-area ul.slick-dots li {
+        display: inline-block;
+        line-height: 1;
+        margin: 0 2px;
+    }
+    .captions-container {
+        top: 8% !important;
+    }
+    .search-area form {
+        padding: 30px;
+    }
+    .footer-area{
+        padding-bottom: 40px;
+        .single-item {
+            margin-bottom: 40px;
+            .title {
+                margin-bottom: 20px;
+            }
+        } 
+    } 
+    .copyright-area {
+        text-align: center;
+    }
+    .copyright-area ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .about-section .about-area .about-details {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about-section .about-area .about-details h2::before {
+        right: 0;
+    }
+    .inner-banner .inner-text h1 {
+        font-size: 28px;
+    }
+    .investment-area .investment-details {
+        margin-bottom: 40px;
+    }
+    .section-title h2 {
+        font-size: 34px;
+    }
+    .development-area .development-details {
+        position: relative;
+        top: 0;
+    }
+    .development-img-2 {
+        margin-top: 30px;
+    }
+    .development-img-1 {
+        margin-bottom: 20px;
+    }
+    .development-area .text-end {
+        text-align: left!important;
+    }
+    .sell-area .sell-details {
+        margin-bottom: 40px;
+    }
+}
